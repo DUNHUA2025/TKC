@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>東江泉 · 一瓶有故事的好泉水</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>" />
+  <meta name="description" content="東江泉飲用天然泉水 - 紀念東江水供港60週年。源自江西省贛州會昌縣，東江源及贛江源雙自然保護區核心區域，敦華集團榮譽出品。" />
+  <meta property="og:title" content="東江泉 · 一瓶有故事的好泉水" />
+  <meta property="og:description" content="紀念東江水供港60週年，敦華集團推出東江泉飲用天然泉水" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-cn">東江泉</span>
+        <span class="logo-divider">|</span>
+        <span class="logo-en">DONGJIANG SPRING</span>
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">品牌故事</a>
+        <a href="#source">水源地</a>
+        <a href="#quality">品質認證</a>
+        <a href="#production">生產基地</a>
+        <a href="#products">產品系列</a>
+        <a href="#contact">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-video-wrap">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">2025 精心打造</p>
+      <h1 class="hero__title reveal">
+        一瓶有故事的<br/>
+        <span class="highlight">好泉水</span>
+      </h1>
+      <p class="hero__sub reveal">紀念東江水供港60週年 · 敦華集團榮譽出品</p>
+      <div class="hero__cta-row reveal">
+        <a href="#about" class="btn btn--primary">探索故事</a>
+        <a href="#products" class="btn btn--ghost">查看產品</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span></span>
+      <p>向下滾動</p>
+    </div>
+    <!-- flowing water particle canvas -->
+    <canvas id="waterCanvas"></canvas>
+  </section>
+
+  <!-- ===== BRAND BANNER ===== -->
+  <section class="brand-banner">
+    <div class="brand-banner__inner">
+      <div class="brand-banner__item reveal">
+        <span class="brand-banner__num">8.787</span>
+        <span class="brand-banner__unit">mg/L</span>
+        <p>偏硅酸含量<br/><small>遠超普通飲用水標準，補充有益礦物質</small></p>
+      </div>
+      <div class="brand-banner__divider"></div>
+      <div class="brand-banner__item reveal">
+        <span class="brand-banner__num">0</span>
+        <p>重金屬殘留<br/><small>鉛、汞、鎘幾乎未檢出，遠低於國家標準</small></p>
+      </div>
+      <div class="brand-banner__divider"></div>
+      <div class="brand-banner__item reveal">
+        <span class="brand-banner__num">99.9<span style="font-size:0.6em">%</span></span>
+        <p>微生物安全性<br/><small>各項指標均遠低於限定標準，純淨安全</small></p>
+      </div>
+      <div class="brand-banner__divider"></div>
+      <div class="brand-banner__item reveal">
+        <span class="brand-banner__num">200<span style="font-size:0.5em">m+</span></span>
+        <p>地下深層<br/><small>花崗岩裂隙水，經漫長自然過濾與礦化</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__img-wrap reveal-left">
+          <img src="https://www.genspark.ai/api/files/s/yT2ByL1z?cache_control=3600" alt="東江泉水源地" class="about__img" />
+          <div class="about__img-badge">
+            <span>東江水<br/>供港</span>
+            <strong>60<span>週年</span></strong>
+          </div>
+        </div>
+        <div class="about__text reveal-right">
+          <p class="section__eyebrow">品牌故事</p>
+          <h2 class="section__title">一份跨越60年的<br/>深情承諾</h2>
+          <p>東江水自1965年起持續供應香港，滋養了幾代港人的生命。2025年，敦華集團為紀念這份珍貴的歷史情誼，精心研發「東江泉」飲用天然泉水，讓每一口清泉都承載著東江的故事與情懷。</p>
+          <p>我們的水源來自江西省贛州會昌縣，地處東江源及贛江源雙自然保護區核心區域，原始生態環境賦予了東江泉無可比擬的純淨品質。</p>
+          <div class="about__tags">
+            <span>天然泉水</span>
+            <span>雙保護區</span>
+            <span>深層礦化</span>
+            <span>港品認證</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WATER SOURCE ===== -->
+  <section class="source section" id="source">
+    <div class="source__parallax" id="sourceParallax">
+      <div class="source__overlay"></div>
+    </div>
+    <div class="container source__content">
+      <p class="section__eyebrow section__eyebrow--light reveal">水源地生態</p>
+      <h2 class="section__title section__title--light reveal">會昌丹霞雲海<br/>似仙境</h2>
+      <p class="source__desc reveal">石壁坑水庫波光粼粼，藍天白雲與澄淨湖水交相輝映，構成一幅綠色生態山水畫卷。</p>
+
+      <div class="source__cards">
+        <div class="source__card reveal">
+          <div class="source__card-icon">🌿</div>
+          <h3>雙自然保護區</h3>
+          <p>位於東江源及贛江源雙自然保護區，生態環境原始優越，森林覆蓋率極高，形成天然保護屏障。</p>
+        </div>
+        <div class="source__card reveal">
+          <div class="source__card-icon">⛰️</div>
+          <h3>深層岩石過濾</h3>
+          <p>地下二百多米深層花崗岩裂隙水，經漫長自然過濾與礦化，水質純淨且富含多種礦物質。</p>
+        </div>
+        <div class="source__card reveal">
+          <div class="source__card-icon">💧</div>
+          <h3>天然礦化水質</h3>
+          <p>偏硅酸含量達8.787mg/L，遠超國家標準，為身體提供天然礦物質補充，促進健康。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ECOLOGY GALLERY ===== -->
+  <section class="ecology section" id="ecology">
+    <div class="container">
+      <p class="section__eyebrow reveal">生態環境</p>
+      <h2 class="section__title reveal">我們來自<br/>雙自然保護區</h2>
+      <div class="ecology__gallery">
+        <div class="ecology__item ecology__item--large reveal-left">
+          <img src="https://www.genspark.ai/api/files/s/wavcqR2q?cache_control=3600" alt="春山泉源" />
+          <div class="ecology__caption">
+            <h4>原生態水源地</h4>
+            <p>江西省贛州會昌縣富城鄉板坑村</p>
+          </div>
+        </div>
+        <div class="ecology__col">
+          <div class="ecology__item reveal-right">
+            <img src="https://www.genspark.ai/api/files/s/U86v0VFE?cache_control=3600" alt="會昌丹霞地貌" />
+            <div class="ecology__caption">
+              <h4>會昌丹霞地貌</h4>
+              <p>壯觀紅岩峰林，天然屏障</p>
+            </div>
+          </div>
+          <div class="ecology__item reveal-right">
+            <img src="https://www.genspark.ai/api/files/s/yT2ByL1z?cache_control=3600" alt="山間清泉" />
+            <div class="ecology__caption">
+              <h4>山間清泉</h4>
+              <p>花崗岩深層裂隙，純淨礦化</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUALITY CERT ===== -->
+  <section class="quality section" id="quality">
+    <div class="container">
+      <p class="section__eyebrow reveal">品質保證</p>
+      <h2 class="section__title reveal">優質「正」印認證</h2>
+      <p class="section__sub reveal">香港「優質正印」認證，53個國家地區認可，國際水質標準多重檢測保障</p>
+
+      <div class="quality__grid">
+        <div class="quality__feature reveal">
+          <div class="quality__icon quality__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>天然純淨</h3>
+          <p>原始生態環境，無污染水源。深層岩石過濾，純淨健康。</p>
+        </div>
+        <div class="quality__feature reveal">
+          <div class="quality__icon quality__icon--gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-.723 3.065 3.745 3.745 0 01-3.065.723A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.065-.723 3.745 3.745 0 01-.723-3.065A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 01.723-3.065 3.746 3.746 0 013.065-.723A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.065.723 3.746 3.746 0 01.723 3.065A3.745 3.745 0 0121 12z"/></svg>
+          </div>
+          <h3>權威認證</h3>
+          <p>香港優質「正」印認證。國際水質標準，多重檢測保障。</p>
+        </div>
+        <div class="quality__feature reveal">
+          <div class="quality__icon quality__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+          </div>
+          <h3>先進生產</h3>
+          <p>現代化生產基地。智能化生產線，全流程品質控制。</p>
+        </div>
+        <div class="quality__feature reveal">
+          <div class="quality__icon quality__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+          </div>
+          <h3>國際標準</h3>
+          <p>符合全球高端市場需求。53個國家地區認可，品質保證。</p>
+        </div>
+      </div>
+
+      <!-- Cert badges row -->
+      <div class="cert-row reveal">
+        <div class="cert-badge">
+          <div class="cert-badge__seal">正</div>
+          <p>香港優質正印</p>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-badge__seal cert-badge__seal--blue">ISO</div>
+          <p>ISO 認證</p>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-badge__seal cert-badge__seal--green">GB</div>
+          <p>國家標準</p>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-badge__seal cert-badge__seal--gold">53</div>
+          <p>國家認可</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTION ===== -->
+  <section class="production section" id="production">
+    <div class="container">
+      <div class="production__grid">
+        <div class="production__text reveal-left">
+          <p class="section__eyebrow">生產基地</p>
+          <h2 class="section__title">現代化<br/>智能生產</h2>
+          <p>會昌縣振興集團全資子公司——江西七十二峰食品飲料有限公司，投資5千萬元建設現代化生產基地。</p>
+          <div class="production__stats">
+            <div class="production__stat">
+              <strong>3</strong>
+              <p>智能化生產線</p>
+            </div>
+            <div class="production__stat">
+              <strong>5000<span>萬</span></strong>
+              <p>設施投資金額</p>
+            </div>
+            <div class="production__stat">
+              <strong>100<span>%</span></strong>
+              <p>全流程自動化</p>
+            </div>
+          </div>
+          <ul class="production__list">
+            <li>
+              <span class="step-num">01</span>
+              <div>
+                <strong>吹瓶成型</strong>
+                <p>精密模具，符合食品安全標準的PET材料</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">02</span>
+              <div>
+                <strong>無菌灌裝</strong>
+                <p>全封閉無菌環境，確保水質不受污染</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">03</span>
+              <div>
+                <strong>自動貼標</strong>
+                <p>精準貼標技術，確保每瓶產品外觀完美</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">04</span>
+              <div>
+                <strong>品質檢測</strong>
+                <p>多重嚴格檢測，從原材料到成品全程把關</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="production__img-wrap reveal-right">
+          <img src="https://www.genspark.ai/api/files/s/kyM1LFMm?cache_control=3600" alt="現代化生產基地" class="production__img" />
+          <div class="production__img-overlay">
+            <p>現代化智能生產基地</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products section" id="products">
+    <div class="container">
+      <p class="section__eyebrow reveal">產品系列</p>
+      <h2 class="section__title reveal">東江泉<br/>飲用天然泉水</h2>
+      <p class="section__sub reveal">源自雙保護區，每一滴都是大自然的饋贈</p>
+
+      <div class="products__grid">
+        <div class="products__card reveal">
+          <div class="products__img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/yT2ByL1z?cache_control=3600" alt="東江泉 330ml" />
+            <div class="products__badge">暢銷</div>
+          </div>
+          <div class="products__info">
+            <h3>東江泉 · 隨身裝</h3>
+            <p class="products__size">330 ml</p>
+            <p>輕便隨身，清泉隨行，純淨天然的日常好水。</p>
+            <div class="products__tags">
+              <span>天然泉水</span>
+              <span>無添加</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card reveal">
+          <div class="products__img-wrap products__img-wrap--featured">
+            <img src="https://www.genspark.ai/api/files/s/yT2ByL1z?cache_control=3600" alt="東江泉 550ml" />
+            <div class="products__badge products__badge--gold">精選</div>
+          </div>
+          <div class="products__info">
+            <h3>東江泉 · 經典裝</h3>
+            <p class="products__size">550 ml</p>
+            <p>最受歡迎的經典規格，日常飲用的完美選擇。</p>
+            <div class="products__tags">
+              <span>天然泉水</span>
+              <span>富含偏硅酸</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card reveal">
+          <div class="products__img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/yT2ByL1z?cache_control=3600" alt="東江泉 1500ml" />
+          </div>
+          <div class="products__info">
+            <h3>東江泉 · 家庭裝</h3>
+            <p class="products__size">1500 ml</p>
+            <p>大容量家庭裝，健康純淨，全家共享清泉好水。</p>
+            <div class="products__tags">
+              <span>天然泉水</span>
+              <span>家庭首選</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HISTORY TIMELINE ===== -->
+  <section class="timeline section">
+    <div class="container">
+      <p class="section__eyebrow reveal">品牌歷史</p>
+      <h2 class="section__title reveal">東江水的故事</h2>
+      <div class="timeline__track">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content timeline__content--left">
+            <span class="timeline__year">1965</span>
+            <h4>東江供港開始</h4>
+            <p>東深供水工程啟動，東江水開始持續輸送香港，開啟了兩地水脈相連的歷史</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content timeline__content--right">
+            <span class="timeline__year">2000s</span>
+            <h4>水質提升工程</h4>
+            <p>不斷改造升級，東江水供港工程歷經多次擴建，供水量與水質持續提升</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content timeline__content--left">
+            <span class="timeline__year">2020</span>
+            <h4>雙保護區水源發現</h4>
+            <p>在東江源及贛江源雙自然保護區內發現優質地下深層泉水，水質卓越</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content timeline__content--right">
+            <span class="timeline__year">2025</span>
+            <h4>東江泉正式面世</h4>
+            <p>紀念東江水供港60週年，敦華集團正式推出「東江泉」飲用天然泉水，以水為情，連結兩地</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="cta-band__bg" id="ctaBandBg"></div>
+    <div class="cta-band__overlay"></div>
+    <div class="container cta-band__content">
+      <h2 class="reveal">品嚐大自然的<br/>饋贈</h2>
+      <p class="reveal">每一口東江泉，都是對純粹自然的致敬</p>
+      <a href="#contact" class="btn btn--primary btn--lg reveal">立即聯絡我們</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section__eyebrow reveal">聯絡我們</p>
+      <h2 class="section__title reveal">與我們取得聯繫</h2>
+      <div class="contact__grid">
+        <div class="contact__info reveal-left">
+          <div class="contact__item">
+            <div class="contact__icon">📍</div>
+            <div>
+              <strong>公司地址</strong>
+              <p>江西省贛州市會昌縣富城鄉板坑村</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">📞</div>
+            <div>
+              <strong>聯絡電話</strong>
+              <p>+852 XXXX XXXX（香港）</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">✉️</div>
+            <div>
+              <strong>電子郵件</strong>
+              <p>info@tungkongchuen.com</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">🌐</div>
+            <div>
+              <strong>官方網站</strong>
+              <p>www.tungkongchuen.com</p>
+            </div>
+          </div>
+          <div class="contact__social">
+            <p>關注我們</p>
+            <div class="contact__social-icons">
+              <a href="#" aria-label="Facebook" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" aria-label="WeChat" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.063-6.122zm-3.812 3.469c.637 0 1.153.527 1.153 1.176s-.516 1.179-1.153 1.179c-.637 0-1.154-.53-1.154-1.179 0-.649.517-1.176 1.154-1.176zm6.272 0c.637 0 1.154.527 1.154 1.176s-.517 1.179-1.154 1.179c-.636 0-1.153-.53-1.153-1.179 0-.649.517-1.176 1.153-1.176z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form reveal-right">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">您的姓名</label>
+              <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+            </div>
+            <div class="form-group">
+              <label for="email">電子郵件</label>
+              <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">聯絡電話</label>
+              <input type="tel" id="phone" name="phone" placeholder="請輸入您的聯絡電話" />
+            </div>
+            <div class="form-group">
+              <label for="message">訊息內容</label>
+              <textarea id="message" name="message" rows="4" placeholder="請輸入您的訊息或詢問事項" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">發送訊息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__top-inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="logo-cn">東江泉</span>
+            <span class="logo-divider">|</span>
+            <span class="logo-en">DONGJIANG SPRING</span>
+          </div>
+          <p>一瓶有故事的好泉水<br/>紀念東江水供港60週年</p>
+        </div>
+        <div class="footer__nav">
+          <h4>快速連結</h4>
+          <ul>
+            <li><a href="#about">品牌故事</a></li>
+            <li><a href="#source">水源地</a></li>
+            <li><a href="#quality">品質認證</a></li>
+            <li><a href="#production">生產基地</a></li>
+            <li><a href="#products">產品系列</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4>關於我們</h4>
+          <ul>
+            <li><a href="#">敦華集團</a></li>
+            <li><a href="#">企業責任</a></li>
+            <li><a href="#">新聞資訊</a></li>
+            <li><a href="#">加入我們</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>聯絡資訊</h4>
+          <p>江西省贛州市會昌縣<br/>富城鄉板坑村</p>
+          <p>info@tungkongchuen.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 東江泉 · 敦華集團 版權所有</p>
+        <p>
+          <a href="#">私隱政策</a>
+          <span>|</span>
+          <a href="#">使用條款</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="返回頂部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
