@@ -68,7 +68,7 @@
         '<div class="container text-center">' +
           /* Social icons — plain circle, no box border */
           '<div class="footer-social">' +
-            '<a href="https://x.com/DunhuaGroup" target="_blank" rel="noopener" aria-label="X" class="social-link">' +
+            '<a href="https://x.com/BYBANXTOP" target="_blank" rel="noopener" aria-label="X" class="social-link">' +
               '<i class="fa fa-twitter"></i>' +
             '</a>' +
           '</div>' +
@@ -108,7 +108,7 @@
       /* Copyright bar */
       '<div class="footer-copyright">' +
         '<div class="container">' +
-          '<p class="text-center text-muted">東江泉 © 版權所有 &nbsp;|&nbsp; Copyright © 2024-2025</p>' +
+          '<p class="text-center text-muted">東江泉 © 版權所有 &nbsp;|&nbsp; Copyright © 2025-2026</p>' +
         '</div>' +
       '</div>' +
       /* Scroll-to-top button */
