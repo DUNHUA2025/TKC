@@ -135,13 +135,15 @@
     });
   }
 
-  /* ─── Header shadow on scroll ─── */
+  /* ─── Header scrolled class ─── */
   var header = document.querySelector('.site-header');
   window.addEventListener('scroll', function () {
     if (header) {
-      header.style.boxShadow = window.scrollY > 10
-        ? '0 4px 16px rgba(0,0,0,.12)'
-        : '0 2px 8px rgba(0,0,0,.08)';
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
     /* Scroll-to-top visibility */
     var btn = document.getElementById('btn-scrolltop');
