@@ -23,28 +23,12 @@
     <div class="container">
       <div class="masonry-2col">
         <div class="masonry-col">
-          <img src="assets/images/prod_350ml_5.png"   alt="東江泉350ml 5箱裝"   class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/prod_350ml_120.png" alt="東江泉350ml 120箱裝" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/prod_350ml_5.webp"   alt="東江泉350ml 5箱裝"   class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/prod_350ml_120.webp" alt="東江泉350ml 120箱裝" class="img-fluid rounded gallery-img"/>
         </div>
         <div class="masonry-col">
-          <img src="assets/images/prod_500ml_7.png"   alt="東江泉500ml 7箱裝"   class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/prod_500ml_168.png" alt="東江泉500ml 168箱裝" class="img-fluid rounded gallery-img"/>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NFT Promo Banner -->
-  <section class="section-nft-promo">
-    <div class="container">
-      <div class="nft-promo-box">
-        <div class="nft-promo-inner">
-          <p><strong>【聯絡我們】</strong></p>
-          <h3><span style="color:rgb(156,0,255);">一次性團購金額$2000以上</span></h3>
-          <h3><span style="color:rgb(156,0,255);">可獲贈$99U【東江泉WEB3合夥人】</span></h3>
-          <h3><span style="color:rgb(156,0,255);">限量版數字版權收藏品NFT一份</span></h3>
-          <p>數量有限（9999份）贈完即止！</p>
-          <p class="mt-3"><a href="contactus.html" class="btn-contact">了解更多</a></p>
+          <img src="assets/images/prod_500ml_7.webp"   alt="東江泉500ml 7箱裝"   class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/prod_500ml_168.webp" alt="東江泉500ml 168箱裝" class="img-fluid rounded gallery-img"/>
         </div>
       </div>
     </div>
@@ -53,6 +37,50 @@
 </main>
 
 <footer id="bottom"></footer>
+
+<!-- ========== POPUP OVERLAY (shows after 5s, same as original) ========== -->
+<div id="chanpin-popup-overlay" role="dialog" aria-modal="true" aria-label="優惠公告">
+  <div class="popup-box">
+    <button class="popup-close" id="chanpin-popup-close" aria-label="關閉">&times;</button>
+    <div class="popup-inner popup-banner-style">
+      <p><strong>【聯絡我們】</strong></p>
+      <h2><span style="color:rgb(255,0,255);">一次性團購金額$2000以上</span></h2>
+      <h2><span style="color:rgb(255,0,255);">可獲贈$99U【東江泉WEB3合夥人】</span></h2>
+      <h2><span style="color:rgb(255,0,255);">限量版數字版權收藏品NFT一份</span></h2>
+      <p>數量有限（9999份）贈完即止！</p>
+      <p class="mt-3"><a href="contactus.html" class="popup-btn">了解更多</a></p>
+    </div>
+  </div>
+</div>
+
 <script src="main.js"></script>
+<script>
+(function(){
+  // Show popup after 5 seconds (same as original site data-show-after="5000")
+  var shown = sessionStorage.getItem('chanpin_popup_shown');
+  if (!shown) {
+    setTimeout(function(){
+      var overlay = document.getElementById('chanpin-popup-overlay');
+      if (overlay) {
+        overlay.classList.add('popup-visible');
+        sessionStorage.setItem('chanpin_popup_shown', '1');
+      }
+    }, 5000);
+  }
+  // Close handlers
+  document.getElementById('chanpin-popup-close').addEventListener('click', function(){
+    document.getElementById('chanpin-popup-overlay').classList.remove('popup-visible');
+  });
+  document.getElementById('chanpin-popup-overlay').addEventListener('click', function(e){
+    if (e.target === this) this.classList.remove('popup-visible');
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      var overlay = document.getElementById('chanpin-popup-overlay');
+      if (overlay) overlay.classList.remove('popup-visible');
+    }
+  });
+})();
+</script>
 </body>
 </html>

@@ -514,3 +514,41 @@ footer { background: #fff; border-top: 1px solid #eee; padding: 0; }
   .img-circle-logo { width:120px; height:120px; }
   #scrolltop-wrapper { bottom:16px; right:16px; }
 }
+
+/* ====================================================
+   CHAN-PIN PAGE POPUP (overlay shares same base styles)
+   ==================================================== */
+#chanpin-popup-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,.55);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .4s ease;
+}
+#chanpin-popup-overlay.popup-visible {
+  opacity: 1; pointer-events: auto;
+}
+#chanpin-popup-overlay.popup-visible .popup-box { transform: scale(1); }
+
+/* Banner-style popup (matches original parallax banner look) */
+.popup-banner-style {
+  background: linear-gradient(135deg, #1a0033 0%, #3a0066 60%, #1a0033 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+}
+.popup-banner-style p  { color: #fff; font-size: 1rem; margin-bottom: 8px; }
+.popup-banner-style h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+
+/* Single centered QR code on contact page */
+.payment-qr-single {
+  width: 220px; height: auto;
+  max-width: 100%;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #fff;
+  display: block;
+  margin: 12px auto 0;
+}
