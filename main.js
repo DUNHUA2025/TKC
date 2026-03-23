@@ -68,7 +68,7 @@
         '<div class="container text-center">' +
           /* Social icons — plain circle, no box border */
           '<div class="footer-social">' +
-            '<a href="#" target="_blank" aria-label="X" class="social-link">' +
+            '<a href="https://x.com/DunhuaGroup" target="_blank" rel="noopener" aria-label="X" class="social-link">' +
               '<i class="fa fa-twitter"></i>' +
             '</a>' +
           '</div>' +

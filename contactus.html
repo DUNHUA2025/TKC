@@ -54,7 +54,10 @@
 
       <!-- Order Form -->
       <div class="contact-form-wrap">
-        <form id="contactus_form" class="contact-form" novalidate>
+        <form id="contactus_form" class="contact-form"
+              action="https://formsubmit.co/tungkongchuen@gmail.com"
+              method="POST"
+              enctype="multipart/form-data">
 
           <!-- 選擇規格 -->
           <div class="form-field">
@@ -157,12 +160,14 @@
             </div>
           </div>
 
+          <!-- FormSubmit hidden config fields -->
+          <input type="hidden" name="_subject" value="【東江泉】新訂單通知"/>
+          <input type="hidden" name="_captcha" value="false"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="_next" value="https://www.tungkongchuen.com/contactus"/>
+
           <div class="form-field text-center">
             <button type="submit" class="btn-submit">提交訂單</button>
-          </div>
-
-          <div id="form-success" class="form-success-msg" style="display:none;">
-            ✅ 感謝您的訂單！我們將盡快與您聯繫。
           </div>
 
         </form>
@@ -181,19 +186,6 @@ function updateQty(val) {
   document.getElementById('qty_350').style.display = val === '350ml' ? '' : 'none';
   document.getElementById('qty_500').style.display = val === '500ml' ? '' : 'none';
 }
-document.getElementById('contactus_form').addEventListener('submit', function(e){
-  e.preventDefault();
-  var btn = this.querySelector('.btn-submit');
-  btn.textContent = '提交中...';
-  btn.disabled = true;
-  setTimeout(function(){
-    document.getElementById('form-success').style.display = 'block';
-    document.getElementById('contactus_form').reset();
-    btn.textContent = '提交訂單';
-    btn.disabled = false;
-    document.getElementById('form-success').scrollIntoView({behavior:'smooth'});
-  }, 1000);
-});
 </script>
 </body>
 </html>
