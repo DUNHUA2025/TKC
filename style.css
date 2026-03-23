@@ -691,3 +691,239 @@ footer {
   .mb-block-br { grid-row: 5; }
   .img-circle-logo { width: 120px; height: 120px; }
 }
+
+/* ====================================================
+   SUB-PAGES: Chan-Pin (產品售價)
+   ==================================================== */
+.section-gallery-products { padding: 56px 0 40px; }
+
+.nft-promo-box {
+  background: linear-gradient(135deg, #fff8ff 0%, #f3e5ff 100%);
+  border: 2px solid rgba(156,0,255,.2);
+  border-radius: 16px;
+  padding: 40px 32px;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+.nft-promo-box h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+.nft-promo-box p  { font-size: 1rem; margin-bottom: 6px; }
+.section-nft-promo { padding: 32px 0 72px; }
+
+/* ====================================================
+   SUB-PAGES: Our-Services (品牌故事)
+   ==================================================== */
+.section-story-gallery { padding: 24px 0 56px; }
+.story-gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.story-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ====================================================
+   SUB-PAGES: Jobs (職位空缺)
+   ==================================================== */
+.jobs-topbar {
+  background: #fff;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding: 14px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.jobs-topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.jobs-title { font-size: 1.1rem; font-weight: 700; }
+.jobs-search { display: flex; gap: 8px; }
+.search-input-wrap {
+  display: flex;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+.jobs-search-input {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  font-size: .9rem;
+  outline: none;
+  min-width: 180px;
+}
+.jobs-search-btn {
+  background: #f8f9fa;
+  border: none;
+  border-left: 1px solid #dee2e6;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #555;
+}
+.jobs-container { padding: 48px 0 64px; }
+.jobs-empty { max-width: 500px; margin: 0 auto; }
+.jobs-empty-text { font-size: 1.1rem; color: #6c757d; margin-bottom: 24px; }
+.jobs-empty-img { width: 50%; max-width: 200px; margin: 0 auto 24px; display: block; }
+
+/* ====================================================
+   SUB-PAGES: Contactus (聯絡我們)
+   ==================================================== */
+.contact-hero {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.contact-hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://www.tungkongchuen.com/web/image/website.s_parallax_default_image') center/cover no-repeat;
+}
+.contact-hero-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.5);
+}
+.contact-hero-content {
+  position: relative; z-index: 2;
+  color: #fff;
+}
+.contact-hero-content h1 { font-size: 2rem; color: #fff; }
+
+.contact-main { padding: 40px 0 80px; }
+.contact-map   { margin-bottom: 32px; }
+
+.contact-promo { margin-bottom: 32px; }
+.contact-promo h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+
+.contact-form-wrap {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.07);
+}
+.contact-form .form-field { margin-bottom: 20px; }
+.contact-form label {
+  display: block;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+.contact-form .required { color: #dc3545; }
+
+.form-control, .form-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: .9rem;
+  font-family: inherit;
+  background: #f8f9fa;
+  color: #212529;
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+  -webkit-appearance: none;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(57,132,198,.15);
+  background: #fff;
+}
+.form-control-file {
+  width: 100%;
+  padding: 8px 0;
+  font-size: .9rem;
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 0;
+}
+.form-row-2col .form-field { margin-bottom: 20px; }
+
+.date-input-wrap { position: relative; }
+.date-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.payment-qr-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 16px 0 24px;
+}
+.payment-qr-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.payment-qr-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #fff;
+}
+.qr-label { font-size: .85rem; color: #666; margin-top: 6px; }
+
+.btn-submit {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, box-shadow .2s;
+  font-family: inherit;
+}
+.btn-submit:hover {
+  background: #2c6fad;
+  box-shadow: 0 4px 12px rgba(57,132,198,.3);
+}
+.btn-submit:disabled { opacity: .7; cursor: not-allowed; }
+
+.form-success-msg {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  font-size: .95rem;
+  margin-top: 16px;
+}
+
+/* ====================================================
+   Mobile fixes for sub-pages
+   ==================================================== */
+@media (max-width: 768px) {
+  .form-row-2col { grid-template-columns: 1fr; }
+  .nft-promo-box { padding: 24px 16px; }
+  .nft-promo-box h3 { font-size: 1rem; }
+  .contact-form-wrap { padding: 24px 16px; }
+  .jobs-topbar-inner { flex-direction: column; align-items: flex-start; }
+}

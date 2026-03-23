@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="東江泉 天然飲用泉水 - 聯絡我們"/>
+  <title>聯絡我們 | 東江泉 天然飲用泉水</title>
+  <link rel="shortcut icon" href="assets/images/logo.png"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header id="top" class="site-header"></header>
+
+<main id="wrap">
+
+  <!-- Contact Hero / Parallax Title -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg"></div>
+    <div class="contact-hero-overlay"></div>
+    <div class="container contact-hero-content">
+      <h1>聯絡我們</h1>
+    </div>
+  </section>
+
+  <!-- Map + Form Section -->
+  <section class="contact-main">
+    <div class="container-small">
+
+      <!-- Google Map -->
+      <div class="contact-map">
+        <iframe
+          src="https://maps.google.com/maps?q=%E6%9D%B1%E6%B1%9F%E6%B3%89&t=m&z=17&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="350" frameborder="0" scrolling="no"
+          marginheight="0" marginwidth="0" aria-label="地圖"
+          loading="lazy" style="border:0; border-radius:8px;"></iframe>
+      </div>
+
+      <!-- NFT Promo Text -->
+      <div class="contact-promo text-center">
+        <p class="lead"><br/></p>
+        <p class="lead"><br/></p>
+        <p class="lead text-center"><span style="font-size:1.5rem;"><strong>歡迎企事業批發團購</strong></span></p>
+        <h3 class="text-center"><span style="color:rgb(156,0,255);">一次性團購金額$2000以上</span></h3>
+        <h3 class="text-center"><span style="color:rgb(156,0,255);">可獲贈$99U【東江泉WEB3合夥人】</span></h3>
+        <h3 class="text-center"><span style="color:rgb(156,0,255);">限量版數字版權收藏品NFT一份</span></h3>
+        <p class="text-center"><span style="font-size:1.125rem;">數量有限（9999份）贈完即止！</span></p>
+        <p class="lead"><br/></p>
+      </div>
+
+      <!-- Order Form -->
+      <div class="contact-form-wrap">
+        <form id="contactus_form" class="contact-form" novalidate>
+
+          <!-- 選擇規格 -->
+          <div class="form-field">
+            <label for="spec">選擇規格 <span class="required">*</span></label>
+            <select id="spec" name="選擇規格" required class="form-select" onchange="updateQty(this.value)">
+              <option value="350ml">東江泉 350ml*24支/箱</option>
+              <option value="500ml" selected>東江泉 500ml*24支/箱</option>
+            </select>
+          </div>
+
+          <!-- 數量/金額 350ml -->
+          <div class="form-field" id="qty_350" style="display:none;">
+            <label for="qty350">數量/金額 <span class="required">*</span></label>
+            <select id="qty350" name="數量金額350" class="form-select">
+              <option>1 0 箱： $108/350ml/箱</option>
+              <option selected>2 0 箱： $102/350ml/箱</option>
+              <option>3 0 箱： $96/350ml/箱</option>
+              <option>5 0 箱： $84/350ml/箱</option>
+              <option>100箱： $72/350ml/箱</option>
+            </select>
+          </div>
+
+          <!-- 數量/金額 500ml -->
+          <div class="form-field" id="qty_500">
+            <label for="qty500">數量/金額 <span class="required">*</span></label>
+            <select id="qty500" name="數量金額500" class="form-select">
+              <option>1 0 箱：$150/500ml/箱</option>
+              <option selected>2 0 箱：$142/500ml/箱</option>
+              <option>3 0 箱：$134/500ml/箱</option>
+              <option>5 0 箱：$118/500ml/箱</option>
+              <option>100箱：$100/500ml/箱</option>
+            </select>
+          </div>
+
+          <!-- 聯絡人 + 聯絡電話 -->
+          <div class="form-row-2col">
+            <div class="form-field">
+              <label for="contact_name">聯絡人 <span class="required">*</span></label>
+              <input type="text" id="contact_name" name="聯絡人" required class="form-control" placeholder=""/>
+            </div>
+            <div class="form-field">
+              <label for="contact_phone">聯絡電話 <span class="required">*</span></label>
+              <input type="tel" id="contact_phone" name="聯絡電話" required class="form-control" placeholder=""/>
+            </div>
+          </div>
+
+          <!-- 電郵 + 公司 -->
+          <div class="form-row-2col">
+            <div class="form-field">
+              <label for="contact_email">電郵 <span class="required">*</span></label>
+              <input type="email" id="contact_email" name="email_from" required class="form-control" placeholder=""/>
+            </div>
+            <div class="form-field">
+              <label for="contact_company">公司 / 機構</label>
+              <input type="text" id="contact_company" name="company" class="form-control" placeholder=""/>
+            </div>
+          </div>
+
+          <!-- 收貨地址 -->
+          <div class="form-field">
+            <label for="contact_address">收貨地址 <span class="required">*</span></label>
+            <input type="text" id="contact_address" name="收貨地址" required class="form-control" placeholder=""/>
+          </div>
+
+          <!-- 收貨日期 -->
+          <div class="form-field">
+            <label for="contact_date">收貨日期 <span class="required">*</span></label>
+            <div class="date-input-wrap">
+              <input type="date" id="contact_date" name="scheduled_date" required class="form-control"/>
+              <i class="fa fa-calendar date-icon"></i>
+            </div>
+          </div>
+
+          <!-- 付款方式 -->
+          <div class="form-field">
+            <label for="contact_pay">付款方式 <span class="required">*</span></label>
+            <select id="contact_pay" name="付款方式" required class="form-select">
+              <option selected>網頁下圖/門店微信二維碼付款</option>
+              <option>敦華集團有限公司 / 匯豐銀行 / 賬號：023 6088 21838</option>
+            </select>
+          </div>
+
+          <!-- 付款證明 -->
+          <div class="form-field">
+            <label for="contact_proof">付款證明 <span class="required">*</span></label>
+            <input type="file" id="contact_proof" name="attachment_ids" required class="form-control-file" accept="image/*,.pdf"/>
+          </div>
+
+          <!-- NFT接收 -->
+          <div class="form-field">
+            <label for="contact_nft">NFT接收 [Eth網絡]</label>
+            <input type="text" id="contact_nft" name="NFT接收" class="form-control" placeholder="0x..."/>
+          </div>
+
+          <!-- Payment QR codes -->
+          <div class="payment-qr-section">
+            <p class="text-center"><strong>付款二維碼</strong></p>
+            <div class="payment-qr-row">
+              <div class="text-center">
+                <img src="assets/images/footer_qr.webp" alt="微信付款" class="payment-qr-img"/>
+                <p class="qr-label">微信</p>
+              </div>
+              <div class="text-center">
+                <img src="assets/images/footer_qr2.webp" alt="其他付款" class="payment-qr-img"/>
+                <p class="qr-label">其他</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-field text-center">
+            <button type="submit" class="btn-submit">提交訂單</button>
+          </div>
+
+          <div id="form-success" class="form-success-msg" style="display:none;">
+            ✅ 感謝您的訂單！我們將盡快與您聯繫。
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer id="bottom"></footer>
+
+<script src="main.js"></script>
+<script>
+function updateQty(val) {
+  document.getElementById('qty_350').style.display = val === '350ml' ? '' : 'none';
+  document.getElementById('qty_500').style.display = val === '500ml' ? '' : 'none';
+}
+document.getElementById('contactus_form').addEventListener('submit', function(e){
+  e.preventDefault();
+  var btn = this.querySelector('.btn-submit');
+  btn.textContent = '提交中...';
+  btn.disabled = true;
+  setTimeout(function(){
+    document.getElementById('form-success').style.display = 'block';
+    document.getElementById('contactus_form').reset();
+    btn.textContent = '提交訂單';
+    btn.disabled = false;
+    document.getElementById('form-success').scrollIntoView({behavior:'smooth'});
+  }, 1000);
+});
+</script>
+</body>
+</html>

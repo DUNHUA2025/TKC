@@ -21,54 +21,8 @@
 </head>
 <body>
 
-<!-- ========== HEADER ========== -->
-<header id="top" class="site-header">
-  <!-- Desktop Nav -->
-  <nav class="navbar-desktop">
-    <div class="nav-container">
-      <a href="/" class="navbar-brand">
-        <img src="assets/images/logo.png" width="95" height="40" alt="東江泉飲用天然泉水"/>
-      </a>
-      <ul class="nav-menu">
-        <li><a href="/" class="active">主頁</a></li>
-        <li><a href="#products">產品售價</a></li>
-        <li><a href="#brand-story">品牌故事</a></li>
-        <li><a href="#about">關於我們</a></li>
-        <li><a href="#jobs">職位空缺</a></li>
-        <li><a href="#contact">聯絡我們</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="tel:+852-35905187" class="nav-phone">
-          <i class="fa fa-phone"></i>
-          <small>+852-3590 5187</small>
-        </a>
-        <a href="#contact" class="btn-contact">聯絡我們</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Nav -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-top">
-      <a href="/" class="navbar-brand">
-        <img src="assets/images/logo.png" width="95" height="40" alt="東江泉飲用天然泉水"/>
-      </a>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="切換導覽">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="/">主頁</a></li>
-        <li><a href="#products">產品售價</a></li>
-        <li><a href="#brand-story">品牌故事</a></li>
-        <li><a href="#about">關於我們</a></li>
-        <li><a href="#jobs">職位空缺</a></li>
-        <li><a href="#contact">聯絡我們</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<!-- ========== HEADER (injected by main.js) ========== -->
+<header id="top" class="site-header"></header>
 
 <!-- ========== MAIN ========== -->
 <main id="wrap">
@@ -102,7 +56,7 @@
       <h1 class="text-right bottle-title"><span style="color:rgb(57,132,198);"><strong>一瓶有故事的好泉水</strong></span></h1>
       <div class="text-center bottle-figure">
         <figure>
-          <img src="assets/images/bottle_350ml.png" alt="東江泉350ml" class="img-fluid bottle-img"/>
+          <img src="assets/images/bottle_main.png" alt="東江泉350ml" class="img-fluid bottle-img"/>
           <figcaption>
             <p class="lead text-center">&nbsp;</p>
             <p class="lead text-center" style="font-size:1.8125rem;"><strong><span style="color:rgb(231,99,99);">紀念東江水供港60週年</span></strong></p>
@@ -156,22 +110,22 @@
   <section class="section-mosaic">
     <div class="container">
       <div class="mosaic-grid">
-        <!-- Top row -->
+        <!-- Top row: title + shuriken lake image -->
         <div class="mosaic-title-block">
           <h2 class="text-center" style="font-size:2rem;"><span>水源地週邊生態</span></h2>
         </div>
         <div class="mosaic-shuriken">
-          <img src="assets/images/lake.jpg" alt="十里畫廊漢仙湖" class="img-fluid img-shuriken"/>
+          <img src="assets/images/scene_c.jpg" alt="十里畫廊漢仙湖" class="img-fluid img-shuriken"/>
         </div>
 
-        <!-- Middle text -->
+        <!-- Subtitle -->
         <div class="mosaic-subtitle">
           <p class="lead text-center">會昌丹霞雲海似仙境</p>
         </div>
 
-        <!-- Large scene left -->
+        <!-- Large scene left (door shape) -->
         <div class="mosaic-scene-large">
-          <img src="assets/images/scene2.jpeg" alt="江西會昌：丹霞雲海似仙境1" class="img-fluid img-blob-door"/>
+          <img src="assets/images/scene_d.jpeg" alt="江西會昌：丹霞雲海似仙境1" class="img-fluid img-blob-door"/>
         </div>
 
         <!-- Middle description -->
@@ -179,19 +133,19 @@
           <p class="text-center">石壁坑水庫波光粼粼，藍天白雲與澄淨湖水交相輝映，構成一幅綠色生態山水畫卷。&nbsp;</p>
         </div>
 
-        <!-- Middle large image -->
+        <!-- Middle large image (rounded square) -->
         <div class="mosaic-center-img">
-          <img src="assets/images/huichang.webp" alt="會昌" class="img-fluid img-rounded-square"/>
+          <img src="assets/images/scene_e.webp" alt="會昌" class="img-fluid img-rounded-square"/>
         </div>
 
         <!-- Bottom left blob -->
         <div class="mosaic-scene-bottom">
-          <img src="assets/images/scene3.jpeg" alt="江西會昌：丹霞雲海似仙境3" class="img-fluid img-blob"/>
+          <img src="assets/images/scene_a.jpeg" alt="江西會昌：丹霞雲海似仙境3" class="img-fluid img-blob"/>
         </div>
 
         <!-- Bottom right circle -->
         <div class="mosaic-scene-circle">
-          <img src="assets/images/scene1.jpeg" alt="江西會昌：丹霞雲海似仙境" class="img-fluid img-circle"/>
+          <img src="assets/images/scene_b.jpeg" alt="江西會昌：丹霞雲海似仙境" class="img-fluid img-circle"/>
         </div>
       </div>
     </div>
@@ -206,11 +160,11 @@
     </div>
   </section>
 
-  <!-- Section 6: Certification Image -->
+  <!-- Section 6: Certification Image (iPad style) -->
   <section class="section-cert-hero">
     <div class="container">
       <div class="cert-hero-img text-center">
-        <img src="assets/images/hero_bottle2.jpg" alt="優質正印認證" class="img-fluid img-ipad rounded"/>
+        <img src="assets/images/cert_hero.jpg" alt="優質正印認證" class="img-fluid img-ipad rounded"/>
       </div>
       <div class="cert-hero-title text-center">
         <h2 style="font-size:2rem;"><b>優質「正」印認證</b></h2>
@@ -230,18 +184,18 @@
     <div class="container">
       <div class="masonry-2col">
         <div class="masonry-col">
-          <img src="assets/images/factory1.png" alt="檢測證明1" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert2.png" alt="檢測2" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/factory2.png" alt="檢測證明2" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert1.png" alt="檢測1" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert3.png" alt="檢測3" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc1.webp" alt="微信截圖1" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc2.webp" alt="檢測2" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc3.webp" alt="微信截圖2" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc4.webp" alt="檢測1" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc5.webp" alt="檢測3" class="img-fluid rounded gallery-img"/>
         </div>
         <div class="masonry-col">
-          <img src="assets/images/cert_2_4.png" alt="2-4" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert_1_4.png" alt="1-4" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/zhengyin.png" alt="優質正字" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert_3_4.png" alt="3-4" class="img-fluid rounded gallery-img"/>
-          <img src="assets/images/cert4.png" alt="檢測4" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc6.webp" alt="2-4" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc7.webp" alt="1-4" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc8.webp" alt="優質正字" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc9.webp" alt="3-4" class="img-fluid rounded gallery-img"/>
+          <img src="assets/images/cert_doc10.webp" alt="檢測4" class="img-fluid rounded gallery-img"/>
         </div>
       </div>
     </div>
@@ -293,16 +247,16 @@
     <div class="container">
       <div class="prod-gallery-grid">
         <div class="prod-gallery-item">
-          <img src="assets/images/prod1.png" alt="生產資質1" class="img-fluid rounded"/>
+          <img src="assets/images/prod_cert1.webp" alt="生產資質1" class="img-fluid rounded"/>
         </div>
         <div class="prod-gallery-item">
-          <img src="assets/images/prod2.png" alt="生產資質2" class="img-fluid rounded"/>
+          <img src="assets/images/prod_cert2.webp" alt="生產資質2" class="img-fluid rounded"/>
         </div>
         <div class="prod-gallery-item">
-          <img src="assets/images/prod3.png" alt="生產資質3" class="img-fluid rounded"/>
+          <img src="assets/images/prod_cert3.webp" alt="生產資質3" class="img-fluid rounded"/>
         </div>
         <div class="prod-gallery-item">
-          <img src="assets/images/prod4.png" alt="生產資質4" class="img-fluid rounded"/>
+          <img src="assets/images/prod_cert4.webp" alt="生產資質4" class="img-fluid rounded"/>
         </div>
       </div>
     </div>
@@ -351,59 +305,14 @@
   <!-- Section 13: Report Image -->
   <section class="section-report">
     <div class="container text-center">
-      <img src="assets/images/report.jpg" alt="202503E 報告" class="img-fluid rounded report-img mx-auto d-block"/>
+      <img src="assets/images/report.webp" alt="202503E 報告" class="img-fluid rounded report-img mx-auto d-block"/>
     </div>
   </section>
 
 </main><!-- end #wrap -->
 
-<!-- ========== FOOTER ========== -->
-<footer id="bottom">
-  <div class="footer-main" id="contact">
-    <div class="container text-center">
-      <!-- Social -->
-      <div class="footer-social">
-        <a href="#" target="_blank" aria-label="X" class="social-link">
-          <i class="fa fa-twitter rounded-circle shadow-sm"></i>
-        </a>
-      </div>
-
-      <p class="mb-1 mt-3">
-        <a class="btn btn-primary btn-dunhua" href="https://www.dunhuagroup.com/#" target="_blank">敦華出品</a>
-      </p>
-      <p class="mb-1 slogan-text">一脉相連 . 飲水思源</p>
-      <h6 class="footer-tagline"><span style="font-size:1.5rem;color:rgb(57,132,198);">做一瓶有故事的好泉水</span></h6>
-
-      <p class="mb-1 footer-company">東江泉(香港)食品飲料有限公司</p>
-      <p class="footer-company-en">Tung kong chuen (Hong Kong) Food and Beverage Co., Limited</p>
-      <p class="mb-1">FLAT I, G/F, WAI CHEUNG INDUSTRIAL CENTRE</p>
-      <p class="mb-1">5 SHEK PAI TAU ROAD, TUEN MUN</p>
-      <p class="mb-1">NEW TERRITORIES, HONG KONG</p>
-      <p class="mb-1"><i class="fa fa-phone"></i> +852-3590 5187</p>
-
-      <ul class="footer-email-list">
-        <li>
-          <i class="fa fa-envelope me-2"></i>
-          <a href="mailto:tungkongchuen@gmail.com">tungkongchuen@gmail.com</a>
-        </li>
-      </ul>
-      <p><a href="https://www.tungkongchuen.com">https://www.tungkongchuen.com</a></p>
-
-      <!-- QR Codes -->
-      <div class="footer-qr-row">
-        <img src="assets/images/footer_qr.webp" alt="QR Code" class="footer-qr"/>
-        <img src="assets/images/footer_qr2.webp" alt="QR Code 2" class="footer-qr"/>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Logo -->
-  <div class="footer-logo-bar">
-    <div class="container text-center">
-      <img src="assets/images/logo.png" alt="東江泉飲用天然泉水" class="footer-logo"/>
-    </div>
-  </div>
-</footer>
+<!-- ========== FOOTER (injected by main.js) ========== -->
+<footer id="bottom"></footer>
 
 <script src="main.js"></script>
 </body>
