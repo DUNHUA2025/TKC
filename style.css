@@ -299,13 +299,15 @@ section { padding: 32px 0; }
 footer { background: #fff; border-top: 1px solid #eee; padding: 0; }
 .footer-main { padding: 32px 20px 24px; text-align: center; }
 .footer-social { margin-bottom: 8px; }
-.social-link { display: inline-flex; align-items: center; justify-content: center; }
-.social-link .fa {
-  font-size: 1.4rem; width: 40px; height: 40px; line-height: 40px;
-  text-align: center; border-radius: 50%; background: #f0f0f0; color: #333;
-  transition: background .2s, color .2s; box-shadow: 0 1px 4px rgba(0,0,0,.1);
+.social-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: #f0f0f0; color: #333;
+  transition: background .2s, color .2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
-.social-link:hover .fa { background: #1da1f2; color: #fff; text-decoration: none; }
+.social-link .fa { font-size: 1.3rem; line-height: 1; }
+.social-link:hover { background: #1da1f2; color: #fff; text-decoration: none; }
 .slogan-text { font-size: 1.1875rem; margin-top: 4px; }
 .footer-tagline { margin: 4px 0 12px; }
 .footer-company { font-size: 1rem; }
@@ -318,10 +320,9 @@ footer { background: #fff; border-top: 1px solid #eee; padding: 0; }
 .footer-qr-item { text-align: center; }
 .footer-qr { width: 100px; height: 100px; object-fit: contain; border: 1px solid #eee; border-radius: 8px; }
 
-/* WeChat QR / Logo bar */
-.footer-logo-bar { padding: 24px 20px 8px; border-top: 1px solid #eee; background: #fafafa; text-align: center; }
-.footer-wechat-qr { width: 160px; height: 160px; object-fit: contain; margin: 0 auto 8px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
-.footer-wechat-label { font-size: .85rem; color: #888; margin-top: 4px; }
+/* Footer logo/QR bar — 640.webp centred */
+.footer-logo-bar { padding: 16px 20px 20px; border-top: 1px solid #eee; background: #fafafa; text-align: center; }
+.footer-wechat-qr { width: 200px; height: auto; object-fit: contain; margin: 0 auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.06); display: block; }
 
 /* Copyright bar */
 .footer-copyright { padding: 12px 20px; border-top: 1px solid #eee; background: #f5f5f5; }

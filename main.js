@@ -66,10 +66,10 @@
       /* Social + info block */
       '<div class="footer-main">' +
         '<div class="container text-center">' +
-          /* Social icons */
+          /* Social icons — plain circle, no box border */
           '<div class="footer-social">' +
             '<a href="#" target="_blank" aria-label="X" class="social-link">' +
-              '<i class="fa fa-twitter rounded-circle shadow-sm"></i>' +
+              '<i class="fa fa-twitter"></i>' +
             '</a>' +
           '</div>' +
           /* 敦華出品 button */
@@ -96,22 +96,13 @@
           '</ul>' +
           /* Website */
           '<p><a href="https://www.tungkongchuen.com">https://www.tungkongchuen.com</a></p>' +
-          /* QR payment codes */
-          '<div class="footer-qr-row">' +
-            '<div class="footer-qr-item">' +
-              '<img src="assets/images/footer_qr.webp" alt="付款QR" class="footer-qr"/>' +
-            '</div>' +
-            '<div class="footer-qr-item">' +
-              '<img src="assets/images/footer_qr2.webp" alt="付款QR2" class="footer-qr"/>' +
-            '</div>' +
-          '</div>' +
+          /* No payment QR in footer — original site has none here */
         '</div>' +
       '</div>' +
-      /* WeChat / Logo centre image */
+      /* Footer logo/QR centre image — 640.webp from original site */
       '<div class="footer-logo-bar">' +
         '<div class="container text-center">' +
-          '<img src="assets/images/footer_wechat_qr.webp" alt="公眾號二維碼" class="footer-wechat-qr"/>' +
-          '<p class="footer-wechat-label">掃描關注公眾號</p>' +
+          '<img src="assets/images/footer_item2.webp" alt="東江泉公眾號" class="footer-wechat-qr"/>' +
         '</div>' +
       '</div>' +
       /* Copyright bar */
